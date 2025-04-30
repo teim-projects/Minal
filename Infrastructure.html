@@ -495,6 +495,58 @@
       backdrop-filter: blur(5px);
       /* Blur effect */
     }
+
+     
+      body {
+        font-family: Arial, sans-serif;
+         background-color: #f4f4f4;
+      }
+  
+      h2 {
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 20px;
+      }
+  
+      .table-container {
+        overflow-x: auto;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        margin-top: 50px;
+      }
+  
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        min-width: 800px;
+      }
+  
+      th, td {
+        padding: 12px 15px;
+        text-align: left;
+        border-bottom: 1px solid #ccc;
+      }
+  
+      th {
+        background-color: #003366;
+        color: white;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+      }
+  
+      tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+  
+      @media (max-width: 600px) {
+        th, td {
+          font-size: 14px;
+          padding: 10px;
+        }
+      }
+  
     
   </style>
 </head>
@@ -507,6 +559,45 @@
   <!-- From Uiverse.io by alexruix -->
   <div class="loader"></div>
 
+  <h2>List of Machines</h2>
+
+  <div class="table-container container">
+    <table>
+      <thead>
+        <tr>
+          <th>Sr. No.</th>
+          <th>Description</th>
+          <th>Make</th>
+          <th>Capacity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>LATHE M/C</td><td>SHETAL</td><td>450 MM DIA</td></tr>
+        <tr><td>2</td><td>LATHE M/C</td><td>TURNER</td><td>450 MM DIA</td></tr>
+        <tr><td>3</td><td>LATHE M/C</td><td>SHARAD</td><td>450 MM DIA</td></tr>
+        <tr><td>4</td><td>LATHE M/C</td><td>---</td><td>1000 MM DIA</td></tr>
+        <tr><td>5</td><td>LATHE M/C</td><td>SHRIKANT</td><td>2000 MM</td></tr>
+        <tr><td>6</td><td>DRO MILLING</td><td>---</td><td>12.00 DRILL / MILL 300 X 800</td></tr>
+        <tr><td>7</td><td>PLANO MILLING</td><td>---</td><td>1250 X 2500 MM</td></tr>
+        <tr><td>8</td><td>BAND SAW (2nos)</td><td>---</td><td>160 MM DIA</td></tr>
+        <tr><td>9</td><td>PLASMA + ARC+TIG</td><td>MEMCO</td><td>600 AMP</td></tr>
+        <tr><td>10</td><td>ARC WELD M/C</td><td>MEMCO</td><td>400 AMP</td></tr>
+        <tr><td>11</td><td>CO2 M/C</td><td>SWISS</td><td>400 AMP</td></tr>
+        <tr><td>12</td><td>CO2 M/C</td><td>PANASONIC</td><td>400 AMP</td></tr>
+        <tr><td>13</td><td>DRILL M/C</td><td>BATLIBOI</td><td>50 MM x 2500 mm Diameter</td></tr>
+        <tr><td>14</td><td>DRILL M/C</td><td>HIDUSTAN</td><td>50 MM x 2500 mm Diameter</td></tr>
+        <tr><td>15</td><td>CRAIN</td><td>ELECTROTEK</td><td>5 TON</td></tr>
+        <tr><td>16</td><td>CRAIN</td><td>ELECTROMECH</td><td>10 TON</td></tr>
+        <tr><td>17</td><td>PROFILE M/C</td><td>SUPIYAR</td><td>2500 x 6300 MM x 120 THK</td></tr>
+        <tr><td>18</td><td>VERTICAL TURNING</td><td>SARASUBH</td><td>DIA1200 MM x 600 HT</td></tr>
+        <tr><td>19</td><td>CNC TURNING</td><td>BFW (FANUC)</td><td>DIA280 MM x 300 L</td></tr>
+        <tr><td>20</td><td>CNC TURNING</td><td>JYOTI (FANUC)</td><td>DIA 700MM X</td></tr>
+        <tr><td>21</td><td>VMC</td><td>JYOTI (FANUC)</td><td>1000MM X 400MM X 400MM</td></tr>
+        <tr><td>22</td><td>VMC DRILLING</td><td>TIRUPATI (FANUC)</td><td>1000MM X 500MM</td></tr>
+        <tr><td>23</td><td>VERTICAL TURNING LATHE</td><td>NILES (FANUC)</td><td>DIA: 1600MM X HT. 1000MM</td></tr>
+      </tbody>
+    </table>
+  </div>
 
   <script>
     window.onload = function () {
